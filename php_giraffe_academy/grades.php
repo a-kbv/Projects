@@ -6,16 +6,19 @@
 </head>
 <body>
 
-<form action="password.php" method="post">
-    Color: <input type="password" name="pw"> <br>
-
+<form action="grades.php" method="post">
+    <input type="text" name="student">
     <input type="submit">
 </form>
 
 <?php
-
-$password = $_POST["pw"];
-echo "Your password is: $password <br>";
+$student = $_POST['student'];
+$grades = [
+        "John" => 6,
+        "George" => 5,
+        "Ani" => 4,
+];
+echo $grades[$student]
 
 ?>
 
