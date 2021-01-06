@@ -1,7 +1,7 @@
 <form action="four_func_calc.php" method="post">
-    first_num<input type="number" name = n1><br>
+    first_num<input type="number" step="0.1" name = n1><br>
     OP <input type="textbox" name = op><br>
-    sec_num<input type="number" name = n2><br>
+    sec_num<input type="number" step="0.1" name = n2><br>
 
     <input type="submit">
 </form>
