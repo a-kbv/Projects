@@ -11,12 +11,20 @@ class Movie{
         return $this->rating;
     }
     function set_rating($rating){
-        $this->rating = $rating;
+        if ($rating == "G" ||
+            $rating == "PG" ||
+            $rating == "PG-13" ||
+            $rating == "R" ||
+            $rating == "NR") {
+            $this->rating = $rating;
+        }else{
+            $this->rating = "NR";
+        }
     }
 }
 
 $avengers = new Movie("Avengers", "PG-13");
-$avengers->set_rating("Dog");
+$avengers->set_rating("Dogs");
 echo $avengers->get_rating();
 
 ?>
