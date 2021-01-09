@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed");
+
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  background: url("bg.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+.main-section {
+  margin: 0 auto;
+  margin-top: 150px;
+  padding: 0;
+}
+.modal-content {
+  background-color: #302ddb50;
+  opacity: 0.95;
+}
+.user-name {
+  margin-top: 10px 0;
+}
+.user-name h1 {
+  font-size: 30px;
+  color: #fefaff;
+}
+.form-input button {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.btn-success {
+  background-color: rgba(40, 40, 223, 0.671);
+  border: 1px solid;
+}
+.btn-success:hover {
+  background-color: rgba(137, 40, 216, 0.671);
+  border: 1px solid;
+}
