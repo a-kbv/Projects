@@ -1,10 +1,9 @@
 <?php
 require_once 'db/db_connection.php';
 $response = '';
-$suername = "";
-$password = "";
-
-if (isset($_POST['username'], $_POST['password'])){
+$username = '';
+$password = '';
+if (isset($_POST['username'], $_POST['password'])) {
     $username = $_POST['username'];
     $password = $_POST['password'];
 
@@ -13,10 +12,10 @@ if (isset($_POST['username'], $_POST['password'])){
     $result = register($db, $username, $password);
 
     if ($result) {
-        header("location:login.php");
+        header("Location: login.php");
         exit;
-    }else{
-        $response = 'ERROR';
+    } else {
+        $response = 'Error';
     }
 }
 require_once 'templates/register_form.php';
