@@ -2,17 +2,18 @@
 
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
-  background: url("bg.jpg") no-repeat center center fixed;
+  background: url("bgs.jpg") no-repeat center center fixed;
   background-size: cover;
 }
 .main-section {
   margin: 0 auto;
-  margin-top: 150px;
+  margin-top: 200px;
   padding: 0;
 }
 .modal-content {
   background-color: #302ddb50;
   opacity: 0.95;
+  border: none;
 }
 .user-name {
   margin-top: 10px 0;
@@ -28,6 +29,20 @@ body {
 .btn-success {
   background-color: rgba(40, 40, 223, 0.671);
   border: 1px solid;
+}
+.btn-success:active {
+  color: #fff;
+  background-color: rgba(40, 40, 223, 0.671);
+  border-color: rgba(40, 40, 223, 0.671);
+  outline: none;
+}
+.btn-success:focus {
+  color: #fff;
+  background-color: rgba(40, 40, 223, 0.671);
+  border-color: rgba(40, 40, 223, 0.671);
+  outline: none;
+  box-shadow: none;
+}
 }
 .btn-success:hover {
   background-color: rgba(137, 40, 216, 0.671);
